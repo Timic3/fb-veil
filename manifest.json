@@ -1,0 +1,22 @@
+{
+    "name": "Facebook Veil",
+    "description": "This application prevents certain HTTP requests from being sent to hide the infamous 'Seen' indicator.",
+    "version": "0.1",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "veil.js"
+        ]
+    },
+    "browser_action": {
+        "default_title": ""
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "*://www.facebook.com/*"
+    ],
+    "icons": {
+        "128": "assets/icons/veil-128.png"
+    }
+}
